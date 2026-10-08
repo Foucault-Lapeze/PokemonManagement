@@ -20,7 +20,7 @@ public class DresseurController {
     private IDresseurService service;
 
     @GetMapping("/{id}")
-    public ResponseEntity<DresseurDto> getDresseur(@PathVariable Long id) {
+    public ResponseEntity<DresseurDto> getDresseurById(@PathVariable Long id) {
         if (!service.exist(id)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }

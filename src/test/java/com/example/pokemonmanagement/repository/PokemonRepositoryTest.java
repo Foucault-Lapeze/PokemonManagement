@@ -18,7 +18,7 @@ class PokemonRepositoryTest {
     private PokemonRepository pokemonRepository;
 
     @Autowired
-    private DresseurRepository dresseurRepository; // Ajouté pour créer le dresseur
+    private DresseurRepository dresseurRepository;
 
     @Test
     void should_return_pokemon_list_when_dresseur_has_pokemons() {

@@ -36,7 +36,6 @@ class DresseurControllerTest {
         // Act & Assert
         mockMvc.perform(get("/dresseurs/1"))
                 .andExpect(status().isOk())
-                // On utilise les clés exactes générées dans le JSON
                 .andExpect(jsonPath("$.name").value("Sacha"))
                 .andExpect(jsonPath("$.levelDresseur").value(190))
                 .andExpect(jsonPath("$.nbPokemon").value(3));

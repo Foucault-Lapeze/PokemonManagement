@@ -43,9 +43,9 @@ class DresseurServiceTest {
         Dresseur dresseur = new Dresseur();
         dresseur.setNom("Maître");
 
-        Pokemon p1 = new Pokemon(); p1.setType("Feu"); p1.setNiveau(50); // lvl 50 + 10 (Élite) = 60
-        Pokemon p2 = new Pokemon(); p2.setType("Eau"); p2.setNiveau(40); // lvl 40
-        Pokemon p3 = new Pokemon(); p3.setType("Plante"); p3.setNiveau(60); // lvl 60 + 10 (Élite) = 70
+        Pokemon p1 = new Pokemon(); p1.setType("Feu"); p1.setNiveau(50);
+        Pokemon p2 = new Pokemon(); p2.setType("Eau"); p2.setNiveau(40);
+        Pokemon p3 = new Pokemon(); p3.setType("Plante"); p3.setNiveau(60);
 
         dresseur.setPokemons(List.of(p1, p2, p3));
 
